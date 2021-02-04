@@ -11,7 +11,7 @@ var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 today = mm + "" + dd;
 
-if(today !== "0831"){
+if(today === "0831"){
     document.body.style.background = "linear-gradient(to right top, #B22222, #CD5C5C)";
     text.style.color = "white";
     yesno.style.color = "white";
