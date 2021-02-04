@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, #E91E63, #C2185B);
 }
 
 .home {
@@ -21,13 +21,13 @@ body {
     flex-direction: column;
 }
 .text {
-    color: #426696;
+    color: white;
     font-weight: 600;
     font-size: 2rem; 
 }
 
 .yesno {
-    color: #426670;
+    color: #BDBDBD;
     font-weight: 600;
     font-size: 1.5rem; 
 }
