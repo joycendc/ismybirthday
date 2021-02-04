@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem; 
+}
+
+.yesno {
+    color: #426670;
+    font-weight: 600;
+    font-size: 2rem; 
+}
