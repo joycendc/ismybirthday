@@ -1,5 +1,17 @@
 const yesno = document.querySelector(".yesno");
 const text = document.querySelector(".text");
+
+if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("serviceWorker.js").then(reg => {
+        console.log("Registered");
+        console.log(reg);
+    }).catch(error => {
+        console.log("Failed");
+        console.log(error);
+    })
+
+}
+
 const Fallit = () => {
     setTimeout(function(){
         confetti.start();
