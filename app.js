@@ -1,16 +1,23 @@
 const yesno = document.querySelector(".yesno");
 const text = document.querySelector(".text");
 
-if("serviceWorker" in navigator){
-    navigator.serviceWorker.register("serviceWorker.js").then(reg => {
-        console.log("Registered");
-        console.log(reg);
-    }).catch(error => {
-        console.log("Failed");
-        console.log(error);
-    })
 
-}
+var time = 9
+setInterval(function() {
+  var seconds = time % 60;
+  var minutes = (time - seconds) / 60;
+  if (seconds.toString().length == 1) {
+    seconds = seconds;
+  }
+  if (minutes.toString().length == 1) {
+    minutes = minutes;
+  }
+  document.getElementById("time").innerHTML = seconds + "s";
+  time--;
+  if (time == 0) {
+    window.location.href = "video.html";
+  }
+}, 1000);
 
 const Fallit = () => {
     setTimeout(function(){
@@ -23,7 +30,7 @@ var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 today = mm + "" + dd;
 
-if(today === "0401"){
+if(today === "0331"){
     document.body.style.background = "linear-gradient(to right top, #B22222, #CD5C5C)";
     text.style.color = "white";
     yesno.style.color = "white";
