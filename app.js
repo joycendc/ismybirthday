@@ -30,14 +30,10 @@ var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 today = mm + "" + dd;
 
-if(today === "0331"){
-    document.body.style.background = "linear-gradient(to right top, #B22222, #CD5C5C)";
-    text.style.color = "white";
-    yesno.style.color = "white";
-    Fallit();
-    
-    text.textContent = "HAPPY BIRTHDAY ANGELIE LOVE 🎉";
-    yesno.textContent = "WISHING YOU A YEAR OF HAPPINESS \n I LOVE YOU SO MUCH  😘 ";
-}else {
-    yesno.textContent = "NO"
-}
+
+document.body.style.background = "linear-gradient(to right top, #B22222, #CD5C5C)";
+text.style.color = "white";
+yesno.style.color = "white";
+Fallit();
+
+text.textContent = "HAPPY BIRTHDAY ANGELIE LOVE 🎉";
