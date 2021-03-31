@@ -36,5 +36,5 @@ today = mm + "" + dd;
     yesno.style.color = "white";
     Fallit();
     
-    text.textContent = "HAPPY BIRTHDAY ANGELIE LOVE 🎉";
-    yesno.textContent = "WISHING YOU A YEAR OF HAPPINESS \n I LOVE YOU SO MUCH  😘 ";
+    text.textContent = "HAPPY BIRTHDAY BABY 😘🎉";
+    yesno.textContent = "STAY CUTE AND SEXY \n I LOVE YOU SO MUCH  😘 ";
